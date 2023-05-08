@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red42\green49\blue64;\red245\green245\blue246;}
+{\*\expandedcolortbl;;\cssrgb\c21569\c25490\c31765;\cssrgb\c96863\c96863\c97255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 +-----------------------+\
+|     ft_lstdelone      |\
++-----------------------+\
+          |\
+          V\
++-----------------------+\
+| 1. Check lst is not   |\
+|    NULL               |\
++-----------------------+\
+          |\
+          V\
++-----------------------+\
+| 2. Check del is not   |\
+|    NULL               |\
++-----------------------+\
+          |\
+          V\
++-----------------------+\
+| 3. Call del on        |\
+|    lst->content       |\
++-----------------------+\
+          |\
+          V\
++-----------------------+\
+| 4. Free lst           |\
++-----------------------+\
+          |\
+          V\
++-----------------------+\
+| 5. Set lst to NULL    |\
++-----------------------+\
+\
+\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Explicaci\'f3n:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Se verifica si 
+\f2\fs28 lst
+\f1\fs32  no es NULL. Si es NULL, se finaliza la funci\'f3n.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Se verifica si 
+\f2\fs28 del
+\f1\fs32  no es NULL. Si es NULL, se salta el paso 3 y se pasa directamente al paso 4.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Se llama a la funci\'f3n 
+\f2\fs28 del
+\f1\fs32  para eliminar el contenido (
+\f2\fs28 lst->content
+\f1\fs32 ) de 
+\f2\fs28 lst
+\f1\fs32 .\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Se libera la memoria ocupada por 
+\f2\fs28 lst
+\f1\fs32 .\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Se establece 
+\f2\fs28 lst
+\f1\fs32  como NULL.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Este proceso elimina un \'fanico elemento de la lista enlazada representado por 
+\f2\fs28 lst
+\f1\fs32 , liberando la memoria ocupada por dicho elemento y su contenido utilizando la funci\'f3n 
+\f2\fs28 del
+\f1\fs32 . Al finalizar, 
+\f2\fs28 lst
+\f1\fs32  se establece como NULL para indicar que ya no apunta a ning\'fan elemento.\
+}

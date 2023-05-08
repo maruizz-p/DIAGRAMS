@@ -1,0 +1,159 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset134 PingFangSC-Regular;
+\f3\fnil\fcharset0 HelveticaNeue;\f4\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red42\green49\blue64;\red245\green245\blue246;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c21569\c25490\c31765;\cssrgb\c96863\c96863\c97255;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+\uc0\u9484 \u9472 \u9472 
+\f1 \uc0\u9660 
+\f0 \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9488 \
+\uc0\u9474  lst = NULL? \u9474 \
+\uc0\u9492 \u9472 \u9472 
+\f2 \'a9\'d0
+\f0 \uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9496 \
+   \uc0\u9474 \
+   \uc0\u9474  s\'ed\
+   
+\f1 \uc0\u9660 
+\f0 \
+ fin\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Si 
+\f4\fs21 \cf4 \strokec4 lst
+\f3\fs32 \cf2 \strokec2  es igual a 
+\f4\fs21 \cf4 \strokec4 NULL
+\f3\fs32 \cf2 \strokec2 , no hay elementos en la lista original, por lo que se retorna 
+\f4\fs21 \cf4 \strokec4 NULL
+\f3\fs32 \cf2 \strokec2  para la nueva lista.\
+\
+
+\fs24 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ new_list = NULL\
+while (lst != NULL)\
+
+\f2 \'a9\'b0\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'d8\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'b4
+\f3 \
+\uc0\u9474  content = f(lst->content) \u9474 \
+
+\f2 \'a9\'b8\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'d0\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'bc
+\f3 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ fin\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 Se inicializa 
+\f4\fs21 \cf4 \strokec4 new_list
+\f3\fs32 \cf2 \strokec2  como 
+\f4\fs21 \cf4 \strokec4 NULL
+\f3\fs32 \cf2 \strokec2 . Luego, se itera a trav\'e9s de la lista original 
+\f4\fs21 \cf4 \strokec4 lst
+\f3\fs32 \cf2 \strokec2 , extrayendo el contenido de cada nodo y almacen\'e1ndolo en 
+\f4\fs21 \cf4 \strokec4 content
+\f3\fs32 \cf2 \strokec2 .\
+\
+
+\fs24 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+
+\f2 \'a9\'b0\'a9\'a4\'a9\'a4
+\f3 \uc0\u9660 
+\f2 \'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'b4
+\f3 \
+\uc0\u9474  new_node = ft_lstnew(content) \u9474 \
+
+\f2 \'a9\'b8\'a9\'a4\'a9\'a4\'a9\'d0\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'bc
+\f3 \
+   \uc0\u9474 \
+   \uc0\u9474  si new_node == NULL\
+   \uc0\u9660 \
+ fin\
+\
+
+\fs32 Se crea un nuevo nodo 
+\f4\fs21 \cf4 \strokec4 new_node
+\f3\fs32 \cf2 \strokec2  utilizando la funci\'f3n 
+\f4\fs21 \cf4 \strokec4 ft_lstnew
+\f3\fs32 \cf2 \strokec2 , pasando 
+\f4\fs21 \cf4 \strokec4 content
+\f3\fs32 \cf2 \strokec2  como argumento. Si 
+\f4\fs21 \cf4 \strokec4 new_node
+\f3\fs32 \cf2 \strokec2  es igual a 
+\f4\fs21 \cf4 \strokec4 NULL
+\f3\fs32 \cf2 \strokec2 , se ha producido un error al crear el nuevo nodo. En este caso, se debe liberar la memoria de la nueva lista creada hasta ese momento, liberar 
+\f4\fs21 \cf4 \strokec4 content
+\f3\fs32 \cf2 \strokec2  utilizando la funci\'f3n 
+\f4\fs21 \cf4 \strokec4 del
+\f3\fs32 \cf2 \strokec2 , y retornar 
+\f4\fs21 \cf4 \strokec4 NULL
+\f3\fs32 \cf2 \strokec2 .\
+\
+
+\fs24 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ ft_lstadd_back(&new_list, new_node)\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ fin
+\fs32 \
+\
+Si el nuevo nodo se cre\'f3 con \'e9xito, se agrega al final de la nueva lista utilizando la funci\'f3n 
+\f4\fs21 \cf4 \strokec4 ft_lstadd_back
+\f3\fs32 \cf2 \strokec2 .\
+\
+
+\fs24 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ lst = lst->next\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   \uc0\u9660 \
+ fin
+\fs32 \
+\
+Se avanza al siguiente nodo de la lista original.\
+\
+
+\fs24 inicio\
+   \uc0\u9474 \
+   \uc0\u9474 \
+   
+\f2 \'a9\'b8\'a9\'a4\'a9\'a4
+\f3 \uc0\u9660 
+\f2 \'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'b4
+\f3 \
+       new_list = NULL?\
+   
+\f2 \'a9\'b8\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'d0\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'a4\'a9\'bc
+\f3 \
+           \uc0\u9474 \
+           \uc0\u9474  s\'ed\
+           \uc0\u9660 \
+ fin
+\fs32 \
+\
+\pard\pardeftab720\sa400\partightenfactor0
+\cf2 Si se han procesado todos los nodos de la lista original y se ha creado la nueva lista correctamente, se retorna 
+\f4\fs28 new_list
+\f3\fs32 .\
+}
